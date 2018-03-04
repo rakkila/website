@@ -34,10 +34,10 @@
             "showButtons": true,
             "showArrow": true,
             "contentAlign": "center",
-            "bgImageRadio": false,
-            "bgImage": "@PROJECT_PATH@/assets/images/me-960x960.jpg",
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/mbr-786x1080.jpg",
             "parallax": true,
-            "bgColorRadio": true,
+            "bgColorRadio": false,
             "bgColor": "#d3dfd2",
             "bgVideoRadio": false,
             "bgVideo": {
@@ -47,15 +47,23 @@
             "overlayColor": "#ffffff",
             "overlayOpacity": 0.5
           },
-          "title": "Rebecca Akkila",
+          "title": "<b>Rebecca Akkila</b>",
           "text": "Hej och välkommen till mig webbsida. Jag är en 22-årig tjej som tycker om att skapa, skriva och reflektera. Därför tänkte jag skapa en plats som jag kan designa själv och använda till att spara och dela mina tankar på. Här finner ni både min blogg och vad jag erbjuder för tjänster.&nbsp;",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Om mig</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Blogg</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-secondary-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Tjänster</a> ",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-white-outline btn-white\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Om mig</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white-outline btn-white\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Blogg</a> <a data-app-btn=\"true\" class=\"btn btn-lg btn-white-outline btn-white\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Tjänster</a> ",
           "alias": "purity/components",
           "_tags": [
             "Theme"
           ],
           "_name": "header1",
-          "_anchor": "header1-1"
+          "_anchor": "header1-1",
+          "_styles": {
+            "B": {
+              "color": "#fbf2be"
+            },
+            "P": {
+              "color": "#f2f2f2"
+            }
+          }
         },
         {
           "_params": {
@@ -68,7 +76,7 @@
             "bgImage": "@PROJECT_PATH@/assets/images/mbr-720x1080.jpg",
             "parallax": false,
             "bgColorRadio": true,
-            "bgColor": "#d3dfd2",
+            "bgColor": "#fbf2be",
             "bgVideoRadio": false,
             "bgVideo": {
               "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
