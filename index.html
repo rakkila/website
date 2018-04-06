@@ -1,70 +1,108 @@
 <!DOCTYPE html>
-<html >
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-  <!-- Site made with Mobirise Website Builder v4.6.6, https://mobirise.com -->
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.6.6, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>Home</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projekt 2018 Dashboard</title>
+  <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/css/main.css">
+  <link rel="stylesheet" href="./scrollist.css">
+
 </head>
-<body>
-  <section class="mbr-section" id="msg-box5-2" data-rv-view="4" style="background-color: rgb(255, 255, 255); padding-top: 0px; padding-bottom: 0px;">
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="mbr-table-md-up">
-
-              
-
-              <div class="mbr-table-cell col-md-5 text-xs-center text-md-right content-size">
-                  <h3 class="mbr-section-title display-2">Rebecca Akkila</h3>
-                  <div class="lead">
-
-                    <p>Välkommen till min webbsida. Jag bor i Linköping och studerar fjärde året till civilingenjör i medieteknik. När jag inte studerar tycker jag om att laga vegetarisk mat, läsa och vara ute i naturen. Här hittar ni min portfolio där ni kan se mina fritidsprojekt och skolarbeten samt kontaktuppgifter till mig. Tveka inte att höra av er om ni har något spännande jobb som ni tror jag skulle passa för!</p>
-
-                  </div>
-
-                  <div><a class="btn btn-danger" href="https://mobirise.com">Portfolio</a>   <a class="btn btn-danger" href="mailto:becca2808@hotmail.com">Kontakta mig</a> </div>
-              </div>
-
-
-              
-
-
-              <div class="mbr-table-cell mbr-left-padding-md-up mbr-valign-top col-md-7 image-size" style="width: 50%;">
-                  <div class="mbr-figure"><img src="assets/images/27021983-10216041375655348-9022368331299702314-o-1151x1151.jpg"></div>
-              </div>
-
-            </div>
-        </div>
+<body class="application">
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Projekt 2018 Dashboard</a>
+      </div>
     </div>
-
-</section>
-
-
-  <section class="engine"><a href="https://mobirise.ws/h">how to make own website</a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smooth-scroll/smooth-scroll.js"></script>
-  <script src="assets/viewport-checker/jquery.viewportchecker.js"></script>
-  <script src="assets/theme/js/script.js"></script>
+  </div>
   
+  <div class="container-fluid">
   
-  <input name="animation" type="hidden">
-  </body>
+      <!-- Graf -->
+      <div class="row">
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Chart
+              </div>
+              <div class="chart-stage">
+                <div id="chart"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div> <!-- contriner -->
+
+			
+	 <div class="flex-container">
+	   	<ul id="listan" style="list-style-type:none">
+			<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+		</ul>
+		<div class="button_title">Sort lines:</div>
+		<button onclick="sortLines('A')">A</button> 
+		<button onclick="sortLines('B')">B</button> 
+		<button onclick="sortLines('C')">C</button> 
+		<button onclick="sortLines('D')">D</button> 
+		<button onclick="sortLines('E')">E</button> 
+		<button onclick="sortLines('F')">F</button> 
+		<button onclick="sortLines('G')">G</button> 
+		<button onclick="sortLines('H')">H</button> 
+		<button onclick="sortLines('I')">I</button> 
+		<button onclick="sortLines('J')">J</button> 
+		<button onclick="sortLines('K')">K</button> 
+		<button onclick="sortLines('L')">L</button> 
+		<button onclick="sortLines('M')">M</button> 
+		<button onclick="sortLines('N')">N</button> 
+		<button onclick="sortLines('O')">O</button> 
+		<button onclick="sortLines('P')">P</button> 
+		<button onclick="sortLines('Q')">Q</button> 
+		<button onclick="sortLines('R')">R</button> 
+		<button onclick="sortLines('S')">S</button> 
+		<button onclick="sortLines('T')">T</button> 
+		<button onclick="sortLines('U')">U</button> 
+		<button onclick="sortLines('V')">V</button> 
+		<button onclick="sortLines('W')">W</button> 
+		<button onclick="sortLines('X')">X</button> 
+		<button onclick="sortLines('Y')">Y</button>
+		<button onclick="sortLines('Z')">Z</button>
+		<button onclick="sortLines('Å')">Å</button>
+		<button onclick="sortLines('Ä')">Ä</button>
+		<button onclick="sortLines('Ö')">Ö</button>
+		
+		<div class="button_title">Show only:</div>
+		<button onclick="girlNames()">Girl names</button> 
+		<button onclick="boyNames()">Boy names</button> 
+	
+		</div>
+		
+		
+		
+	</div> 
+
+	
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/d3.min.js"></script>
+  <script src="./static/lib/js/queue.js" type='text/javascript'></script>
+  <script src="./static/lib/js/colorbrewer.js" type='text/javascript'></script>
+  <!-- Modules -->
+  <script src='./static/js/main.js' type='text/javascript'></script>
+   <script src="./static/js/pc.js" type='text/javascript'></script>
+   <script src="./graf.js" type='text/javascript'></script>
+
+</body>
 </html>
